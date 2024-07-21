@@ -1,0 +1,30 @@
+module aragorn (predictTRnas)
+
+source Cpp from "aragorn.hpp" ("predict_trnas" as predictTRnas)
+
+import types (Str, List)
+
+record TRNA = TRNA
+  { start     :: Int
+  , stop      :: Int
+  , anticodon :: Int 
+  , astem1    :: Int 
+  , spacer1   :: Int 
+  , dstem     :: Int 
+  , dloop     :: Int 
+  , spacer2   :: Int 
+  , astem2    :: Int 
+  , cstem     :: Int 
+  , cloop     :: Int 
+  , intron    :: Int 
+  , nintron   :: Int 
+  , var       :: Int 
+  , varbp     :: Int 
+  , tstem     :: Int 
+  , tloop     :: Int 
+  , energy    :: Real
+  }
+
+record Cpp => TRNA = "tRNA"
+
+predictTRnas :: Str -> [TRNA]

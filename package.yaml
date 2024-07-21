@@ -1,0 +1,14 @@
+name: aragorn
+version: 0.0.0
+homepage: "https://github.com/morloc-lib/aragorn"
+synopsis: tRNA prediction algorithm
+description: A reimplementation of the Aragorn package (Dean and Canback, 2004)
+category: bio
+license: MIT
+author: "Zebulun Arendsee"
+maintainer: "zbwrnz@gmail.com"
+github: "https://github.com/morloc-lib/aragorn"
+bug-reports: "https://github.com/morloc-lib/aragorn/issues"
+cpp-version: 17
+dependencies:
+  - "aragorn"
