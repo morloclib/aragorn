@@ -8,21 +8,20 @@ record TRNA = TRNA
   { start     :: Int
   , stop      :: Int
   , anticodon :: Int 
+  , energy    :: Real
   , astem1    :: Int 
   , spacer1   :: Int 
   , dstem     :: Int 
   , dloop     :: Int 
   , spacer2   :: Int 
-  , astem2    :: Int 
   , cstem     :: Int 
   , cloop     :: Int 
-  , intron    :: Int 
-  , nintron   :: Int 
+  , intron    :: Int  -- position of the intron start
+  , nintron   :: Int  -- length of the intron
   , var       :: Int 
-  , varbp     :: Int 
   , tstem     :: Int 
   , tloop     :: Int 
-  , energy    :: Real
+  , astem2    :: Int 
   }
 
 record Cpp => TRNA = "tRNA"
